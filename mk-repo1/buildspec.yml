@@ -1,0 +1,25 @@
+version: 0.2 
+ 
+phases: 
+  install: 
+    runtime-versions: 
+      nodejs: 12 # 예: Node.js가 필요하다면, 해당 부분은 필요에 따라 수정 
+    commands: 
+      - echo "Nothing to install" 
+ 
+  pre_build: 
+    commands: 
+      - echo "Nothing to pre-build" 
+ 
+  build: 
+    commands: 
+      - echo "Build started on `date`" 
+      - echo "No build step required for static HTML" 
+ 
+  post_build: 
+    commands: 
+      - echo "Build completed on `date`" 
+ 
+artifacts: 
+  files: 
+    - '**/*'
